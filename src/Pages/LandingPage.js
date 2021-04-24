@@ -1,7 +1,10 @@
 import Footer from "../Components/Footer";
 import { Link } from "react-router-dom";
+import { DataContext } from "../Context/DataContext";
 import "../Styles/LandingPage.css";
+import { useContext } from "react";
 export default function LandingPage() {
+  const { setCurrentCategory } = useContext(DataContext);
   return (
     <>
       <div className="gutter" />
@@ -9,7 +12,10 @@ export default function LandingPage() {
       <div className="LandingPage-container">
         <div className="Poster-container poster-1">
           <div className="Poster-overlay">
-            <Link to="/products/mens">
+            <Link
+              to="/products/mens"
+              onClick={() => setCurrentCategory("mens")}
+            >
               <button className="Overlay-button">Shop Now</button>
             </Link>
           </div>
@@ -21,7 +27,10 @@ export default function LandingPage() {
         </div>
         <div className="Poster-container poster-2">
           <div className="Poster-overlay">
-            <Link to="/products/mens">
+            <Link
+              to="/products/mens"
+              onClick={() => setCurrentCategory("mens")}
+            >
               <button className="Overlay-button">Shop Now</button>
             </Link>
           </div>
@@ -33,7 +42,10 @@ export default function LandingPage() {
         </div>
         <div className="Poster-container poster-3">
           <div className="Poster-overlay">
-            <Link to="/products/mens">
+            <Link
+              to="/products/mens"
+              onClick={() => setCurrentCategory("mens")}
+            >
               <button className="Overlay-button">Shop Now</button>
             </Link>
           </div>
@@ -48,7 +60,10 @@ export default function LandingPage() {
       <div className="LandingPage-container">
         <div className="Poster-container poster-1">
           <div className="Poster-overlay">
-            <Link to="/products/womens">
+            <Link
+              to="/products/womens"
+              onClick={() => setCurrentCategory("womens")}
+            >
               <button className="Overlay-button">Shop Now</button>
             </Link>
           </div>
@@ -60,7 +75,10 @@ export default function LandingPage() {
         </div>
         <div className="Poster-container poster-2">
           <div className="Poster-overlay">
-            <Link to="/products/womens">
+            <Link
+              to="/products/womens"
+              onClick={() => setCurrentCategory("womens")}
+            >
               <button className="Overlay-button">Shop Now</button>
             </Link>
           </div>
@@ -72,7 +90,10 @@ export default function LandingPage() {
         </div>
         <div className="Poster-container poster-3">
           <div className="Poster-overlay">
-            <Link to="/products/womens">
+            <Link
+              to="/products/womens"
+              onClick={() => setCurrentCategory("womens")}
+            >
               <button className="Overlay-button">Shop Now</button>
             </Link>
           </div>
@@ -87,7 +108,10 @@ export default function LandingPage() {
       <div className="LandingPage-container">
         <div className="Poster-container poster-1">
           <div className="Poster-overlay">
-            <Link to="/products/kids">
+            <Link
+              to="/products/kids"
+              onClick={() => setCurrentCategory("kids")}
+            >
               <button className="Overlay-button">Shop Now</button>
             </Link>
           </div>
@@ -99,7 +123,10 @@ export default function LandingPage() {
         </div>
         <div className="Poster-container poster-2">
           <div className="Poster-overlay">
-            <Link to="/products/kids">
+            <Link
+              to="/products/kids"
+              onClick={() => setCurrentCategory("kids")}
+            >
               <button className="Overlay-button">Shop Now</button>
             </Link>
           </div>
@@ -111,7 +138,10 @@ export default function LandingPage() {
         </div>
         <div className="Poster-container poster-3">
           <div className="Poster-overlay">
-            <Link to="/products/kids">
+            <Link
+              to="/products/kids"
+              onClick={() => setCurrentCategory("kids")}
+            >
               <button className="Overlay-button">Shop Now</button>
             </Link>
           </div>
