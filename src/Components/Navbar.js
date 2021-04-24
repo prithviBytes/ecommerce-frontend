@@ -8,8 +8,7 @@ export default function Navbar() {
   const handleClose = () => {
     setOpen(false);
   };
-  const changeCategory = (category) => {
-    setCurrentCategory(category);
+  const closeNavbar = () => {
     setOpen(false);
   };
   return (
@@ -28,7 +27,7 @@ export default function Navbar() {
       >
         <li className="Navbar-item">
           <NavLink
-            onClick={() => changeCategory("mens")}
+            onClick={() => closeNavbar("mens")}
             className="Navbar-links"
             to="products/mens"
           >
@@ -37,7 +36,7 @@ export default function Navbar() {
         </li>
         <li className="Navbar-item">
           <NavLink
-            onClick={() => changeCategory("womens")}
+            onClick={() => closeNavbar("womens")}
             className="Navbar-links"
             to="/products/womens"
           >
@@ -46,7 +45,7 @@ export default function Navbar() {
         </li>
         <li className="Navbar-item">
           <NavLink
-            onClick={() => changeCategory("kids")}
+            onClick={() => closeNavbar("kids")}
             className="Navbar-links"
             to="/products/kids"
           >

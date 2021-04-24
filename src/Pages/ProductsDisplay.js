@@ -1,17 +1,24 @@
+import { useParams } from "react-router-dom";
 import ProductCard from "../Components/ProductCard";
 import useToggleState from "../customHooks/useToggleState";
 import FilterSideBar from "../Components/FilterSideBar";
 import { FilterContext } from "../Context/FilterContext";
 import "../Styles/ProductsDisplay.css";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import Footer from "../Components/Footer";
 import Loader from "../Components/Loader";
 import { DataContext } from "../Context/DataContext";
 
 export default function ProductsDisplay(props) {
-  const { currentCategory, isLoadingProducts } = useContext(DataContext);
+  const { currentCategory, isLoadingProducts, setCurrentCategory } = useContext(
+    DataContext
+  );
   const { filteredProducts } = useContext(FilterContext);
   const [displayFilters, toggleDisplayFilters] = useToggleState(true);
+  const { category } = useParams();
+  useEffect(() => {
+    setCurrentCategory(category);
+  });
   const handleFilterDisplay = () => {
     toggleDisplayFilters();
   };

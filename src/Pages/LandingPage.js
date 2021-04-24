@@ -12,10 +12,7 @@ export default function LandingPage() {
       <div className="LandingPage-container">
         <div className="Poster-container poster-1">
           <div className="Poster-overlay">
-            <Link
-              to="/products/mens"
-              onClick={() => setCurrentCategory("mens")}
-            >
+            <Link to="/products/mens">
               <button className="Overlay-button">Shop Now</button>
             </Link>
           </div>
@@ -27,10 +24,7 @@ export default function LandingPage() {
         </div>
         <div className="Poster-container poster-2">
           <div className="Poster-overlay">
-            <Link
-              to="/products/mens"
-              onClick={() => setCurrentCategory("mens")}
-            >
+            <Link to="/products/mens">
               <button className="Overlay-button">Shop Now</button>
             </Link>
           </div>
@@ -42,10 +36,7 @@ export default function LandingPage() {
         </div>
         <div className="Poster-container poster-3">
           <div className="Poster-overlay">
-            <Link
-              to="/products/mens"
-              onClick={() => setCurrentCategory("mens")}
-            >
+            <Link to="/products/mens">
               <button className="Overlay-button">Shop Now</button>
             </Link>
           </div>
@@ -60,10 +51,7 @@ export default function LandingPage() {
       <div className="LandingPage-container">
         <div className="Poster-container poster-1">
           <div className="Poster-overlay">
-            <Link
-              to="/products/womens"
-              onClick={() => setCurrentCategory("womens")}
-            >
+            <Link to="/products/womens">
               <button className="Overlay-button">Shop Now</button>
             </Link>
           </div>
@@ -75,10 +63,7 @@ export default function LandingPage() {
         </div>
         <div className="Poster-container poster-2">
           <div className="Poster-overlay">
-            <Link
-              to="/products/womens"
-              onClick={() => setCurrentCategory("womens")}
-            >
+            <Link to="/products/womens">
               <button className="Overlay-button">Shop Now</button>
             </Link>
           </div>
@@ -90,10 +75,7 @@ export default function LandingPage() {
         </div>
         <div className="Poster-container poster-3">
           <div className="Poster-overlay">
-            <Link
-              to="/products/womens"
-              onClick={() => setCurrentCategory("womens")}
-            >
+            <Link to="/products/womens">
               <button className="Overlay-button">Shop Now</button>
             </Link>
           </div>
@@ -108,10 +90,7 @@ export default function LandingPage() {
       <div className="LandingPage-container">
         <div className="Poster-container poster-1">
           <div className="Poster-overlay">
-            <Link
-              to="/products/kids"
-              onClick={() => setCurrentCategory("kids")}
-            >
+            <Link to="/products/kids">
               <button className="Overlay-button">Shop Now</button>
             </Link>
           </div>
@@ -123,10 +102,7 @@ export default function LandingPage() {
         </div>
         <div className="Poster-container poster-2">
           <div className="Poster-overlay">
-            <Link
-              to="/products/kids"
-              onClick={() => setCurrentCategory("kids")}
-            >
+            <Link to="/products/kids">
               <button className="Overlay-button">Shop Now</button>
             </Link>
           </div>
@@ -138,10 +114,7 @@ export default function LandingPage() {
         </div>
         <div className="Poster-container poster-3">
           <div className="Poster-overlay">
-            <Link
-              to="/products/kids"
-              onClick={() => setCurrentCategory("kids")}
-            >
+            <Link to="/products/kids">
               <button className="Overlay-button">Shop Now</button>
             </Link>
           </div>
