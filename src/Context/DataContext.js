@@ -4,7 +4,7 @@ import axios from "axios";
 export const DataContext = createContext();
 
 export function DataProvider({ children }) {
-  const [currentCategory, setCurrentCategory] = useState("mens");
+  const [currentCategory, setCurrentCategory] = useState("");
   const [products, setProducts] = useState([]);
   const [brands, setBrands] = useState([]);
   const [isLoadingProducts, setLoadingProducts] = useState(false);
